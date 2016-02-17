@@ -91,10 +91,10 @@ button {
 }
 
 nav ul li a, .new span.overlay, #player_nav li a, #listing li a {
-  -moz-transition: all .3s ease-in;
-  -webkit-transition: all .3s ease-in;
-  -o-transition: all .3s ease-in;
-  transition: all .3s ease-in;
+  -moz-transition: all .2s ease-in;
+  -webkit-transition: all .2s ease-in;
+  -o-transition: all .2s ease-in;
+  transition: all .2s ease-in;
 }
 
 body, select, input, textarea {
@@ -409,6 +409,10 @@ span.overlay img {
   -o-border-radius: 15px 15px 0 0;
   border-radius: 15px 15px 0 0;
   behavior: url(PIE.htc);
+  -moz-transition: border,color,background-color;
+  -webkit-transition: border,color,background-color;
+  -o-transition: border,color,background-color;
+  transition: border,color,background-color;
 }
 
 #player_nav li a:hover {
@@ -431,15 +435,15 @@ span.overlay img {
 }
 
 #player_nav li.detail a {
-  background-position: 0 43px;
+  background-position: 0 -43px;
 }
 
 #player_nav li.video a {
-  background-position: 0 129px;
+  background-position: 0 -129px;
 }
 
 #player_nav li.review a {
-  background-position: 0 215px;
+  background-position: 0 -215px;
 }
 
 #player_nav li.detail a.active {
@@ -447,11 +451,11 @@ span.overlay img {
 }
 
 #player_nav li.video a.active {
-  background-position: 0 86px;
+  background-position: 0 -86px;
 }
 
 #player_nav li.review a.active {
-  background-position: 0 172px;
+  background-position: 0 -172px;
 }
 
 #player_nav img {
