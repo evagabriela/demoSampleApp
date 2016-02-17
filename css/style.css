@@ -368,6 +368,49 @@ span.overlay img {
   color: #C2CF52;
 }
 
+.ad {
+  clear: both;
+  width: 728px;
+  height: 98px;
+  margin: 10px 0 30px;
+  background-color: #C2CF52;
+  color: #4E4F48;
+  font-size: 2em;
+  float: left;
+  overflow: hidden;
+  position: relative;
+}
+
+.ad .msg {
+  padding-left: 40px;
+  width: 100%;
+  font-size: 2em;
+  line-height: 90px;
+  position: absolute;
+  top: 0;
+  background-color: #C2CF52;
+  opacity: 0;
+}
+
+.ad .msg:first-child {
+  opacity: 1;
+}
+
+.newsletter {
+  height: 70px;
+  width: 70px;
+  margin-top: 10px;
+  padding: 10px 8px;
+  background-color: #4E4F48;
+  float: right;
+  font-weight: bold;
+  text-align: center;
+}
+
+.newsletter a {
+  color: #C2CF52;
+}
+
 #price {
   float: right;
   margin: -20px 280px 0 0;
