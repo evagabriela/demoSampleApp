@@ -1,0 +1,27 @@
+// Animation Set up
+$ad-screen-count: 5;    //How many screens are in the slide show
+$ad-screen-duration: 3;  //How long will each screen be displayed at full opacity
+$ad-fade-duration:1;    //How long should it take to fade in and later fade out
+
+$ad-msg-duration: $ad-fade-duration + $ad-screen-duration;
+$total-duration: $ad-msg-duration * $ad-screen-duration;
+
+// Animation setup - step 1
+@-webkit-keyframes adAnimation {
+  0%          {opacity:0;}
+  5%, 20%     {opacity:1;}
+  24.9%, 100% {opacity:0;}
+}
+
+// Animate the Add - step 2
+.ad {
+  .msg {
+    -webkit-animation: adAnimation #{$total-duration}s infinite;
+
+    @for $i from 1 through $ad-screen-count {
+       &:nth-of-type(#{$i}) {
+        -webkit-animation-delay: #{($i - 1) * $ad-msg-duration}s; 
+       }
+    }
+  }
+}
