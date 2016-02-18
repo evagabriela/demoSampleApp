@@ -18,7 +18,7 @@ $vendors: "-webkit-", "-moz-", "-o-", "";
 @mixin fadeInOut {
   0%                                 {opacity:0;}
   #{$ad-fade-pct}, #{$ad-screen-pct} {opacity:1;}
-  #{$ad-hide-pct:}, 100%             {opacity:0;}
+  #{$ad-hide-pct}, 100%             {opacity:0;}
 }
 
 @-webkit-keyframes adAnimation {@include fadeInOut}
