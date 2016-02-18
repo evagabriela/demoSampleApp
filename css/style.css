@@ -655,7 +655,10 @@ span.overlay img {
 
 .classify img {
   vertical-align: middle;
-  padding: 5px;
+  margin: 5px;
+  background-color: #C2CF52;
+  border-radius: 5px;
+  behavior: url(PIE.htc);
 }
 
 #details {
