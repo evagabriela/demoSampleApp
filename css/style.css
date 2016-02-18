@@ -431,10 +431,10 @@ span.overlay img {
   0% {
     opacity: 0;
   }
-  5%, 20% {
+  8.33333%, 16.66667% {
     opacity: 1;
   }
-  24.9%, 100% {
+  25%, 100% {
     opacity: 0;
   }
 }
@@ -461,6 +461,10 @@ span.overlay img {
 
 .ad .msg:nth-of-type(5) {
   -webkit-animation-delay: 16s;
+}
+
+.ad .msg:nth-of-type(6) {
+  -webkit-animation-delay: 20s;
 }
 
 #price {
