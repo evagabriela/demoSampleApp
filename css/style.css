@@ -311,6 +311,7 @@ footer li a.last {
   margin-bottom: 20px;
   float: left;
   position: relative;
+  overflow: hidden;
 }
 
 #feature img {
